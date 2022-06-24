@@ -1,7 +1,7 @@
 ﻿@model Back.Models.Testimonial
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Update";
 }
 
 <h1>Edit</h1>
@@ -9,15 +9,15 @@
 <h4>Testimonial</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="width:800px;margin:auto;text-align:center">
         <form asp-action="Update" method="post" enctype="multipart/form-data">
-          <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
                 <label for="formFile" class="form-label">Image</label>
-                <input class="form-control" type="file" id="formFile">
+                <input class="form-control" type="file" id="formFile" asp-for="Photo">
             </div>
             <div class="form-group">
-                <input type="submit" value="Update" class="btn btn-primary" />
+                <input type="submit" value="Update" class="btn btn-primary"  />
             </div>
         </form>
     </div>
@@ -26,4 +26,5 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js" integrity="sha512-FOhq9HThdn7ltbK8abmGn60A/EMtEzIzv1rvuh+DqzJtSGq8BRdEN0U+j0iKEIffiw/yEtVuladk6rsG4X6Uqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.12/jquery.validate.unobtrusive.min.js" integrity="sha512-o6XqxgrUsKmchwy9G5VRNWSSxTS4Urr4loO6/0hYdpWmFUfHqGzawGxeQGMDqYzxjY9sbktPbNlkIQJWagVZQg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

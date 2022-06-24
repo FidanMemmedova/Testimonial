@@ -51,7 +51,7 @@ namespace Back.Areas.AdminPanel.Controllers
             }
 
 
-            testimonial.Image = await testimonial.Photo.SaveFileAsync(_env.WebRootPath, "image");
+            testimonial.Image = await testimonial.Photo.SaveFileAsync(_env.WebRootPath, "images");
             await _context.Testimonials.AddAsync(testimonial);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
@@ -98,15 +98,13 @@ namespace Back.Areas.AdminPanel.Controllers
             {
                 return View();
             }
-            newtestimonial.Image = await newtestimonial.Photo.SaveFileAsync(_env.WebRootPath, "image");
-            await _context.Testimonials.AddAsync(newtestimonial);
-            await _context.SaveChangesAsync();
-            var path = Helper.GetPath(_env.WebRootPath, "image", oldtestimonial.Image);
+            var path = Helper.GetPath(_env.WebRootPath, "images", oldtestimonial.Image);
             if (System.IO.File.Exists(path))
             {
                 System.IO.File.Delete(path);
             }
-            _context.Testimonials.Remove(oldtestimonial);
+            newtestimonial.Image = await newtestimonial.Photo.SaveFileAsync(_env.WebRootPath, "images");
+            oldtestimonial.Image = newtestimonial.Image;
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
@@ -122,7 +120,7 @@ namespace Back.Areas.AdminPanel.Controllers
             {
                 return NotFound();
             }
-            var path = Helper.GetPath(_env.WebRootPath, "image", testimonial.Image);
+            var path = Helper.GetPath(_env.WebRootPath, "images", testimonial.Image);
             if (System.IO.File.Exists(path))
             {
                 System.IO.File.Delete(path);
