@@ -33,8 +33,15 @@ using Back;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\ASUS\Desktop\Testimonial\Areas\AdminPanel\Views\_ViewImports.cshtml"
+using Back.Areas.AdminPanel.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"37b44b1dad761bb480cbbbc6673c9a9ffa8da667", @"/Areas/AdminPanel/Views/Dashboard/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"341d3f88527400e2b52eedc83eacc7a953154d7a", @"/Areas/AdminPanel/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f09d742e6dc081045ed158044e08363a9c73473", @"/Areas/AdminPanel/Views/_ViewImports.cshtml")]
     public class Areas_AdminPanel_Views_Dashboard_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

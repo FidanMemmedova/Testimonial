@@ -33,8 +33,15 @@ using Back;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\Users\ASUS\Desktop\Testimonial\Areas\AdminPanel\Views\_ViewImports.cshtml"
+using Back.Areas.AdminPanel.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0c6c88d789f0e754d4bcf6006273febb39a00ea0", @"/Areas/AdminPanel/Views/Testimonials/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"341d3f88527400e2b52eedc83eacc7a953154d7a", @"/Areas/AdminPanel/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3f09d742e6dc081045ed158044e08363a9c73473", @"/Areas/AdminPanel/Views/_ViewImports.cshtml")]
     public class Areas_AdminPanel_Views_Testimonials_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<Back.Models.Testimonial>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Create", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -81,7 +88,7 @@ using Back;
 
 <p>
     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea05683", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea05881", async() => {
                 WriteLiteral("Create New");
             }
             );
@@ -132,7 +139,7 @@ using Back;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                <td>\r\n                  ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0c6c88d789f0e754d4bcf6006273febb39a00ea07719", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0c6c88d789f0e754d4bcf6006273febb39a00ea07917", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -155,7 +162,7 @@ AddHtmlAttributeValue("", 916, testimonial.Image, 916, 18, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" \r\n                </td>\r\n                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea09250", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea09448", async() => {
                 WriteLiteral("<i class=\"fa-solid fa-trash\"></i>");
             }
             );
@@ -187,7 +194,7 @@ AddHtmlAttributeValue("", 916, testimonial.Image, 916, 18, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</td>\r\n                <td>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea011582", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0c6c88d789f0e754d4bcf6006273febb39a00ea011780", async() => {
                 WriteLiteral("<i class=\"fa-solid fa-pencil\"></i>");
             }
             );
